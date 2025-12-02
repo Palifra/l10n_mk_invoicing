@@ -51,7 +51,7 @@ docker-compose restart odoo
 3. Install the module:
    - Go to **Apps**
    - Remove the **Apps** filter
-   - Search for **"North Macedonia - Invoicing"**
+   - Search for **"Macedonia - Invoicing"**
    - Click **Install**
 
 4. Activate Macedonian language:
@@ -110,7 +110,7 @@ l10n_mk_invoicing/
 
 ## 🌍 About Macedonian Language / За македонскиот јазик
 
-Macedonian (македонски јазик) is a South Slavic language spoken primarily in North Macedonia. This translation follows official terminology used in business and accounting contexts.
+Macedonian (македонски јазик) is a South Slavic language spoken primarily in Macedonia. This translation follows official terminology used in business and accounting contexts.
 
 Македонскиот јазик е јужнословенски јазик што се зборува главно во Северна Македонија. Овој превод ја следи официјалната терминологија што се користи во деловен и сметководствен контекст.
 
@@ -150,7 +150,7 @@ This module is licensed under **LGPL-3.0** - same as Odoo.
 ## 🔗 Related Modules / Поврзани модули
 
 - [l10n_mk_inventory](https://github.com/Palifra/l10n_mk_inventory) - Inventory/Stock translations
-- [l10n_mk](https://github.com/Palifra/l10n_mk) - Chart of Accounts for North Macedonia
+- [l10n_mk](https://github.com/Palifra/l10n_mk) - Chart of Accounts for Macedonia
 
 ---
 
