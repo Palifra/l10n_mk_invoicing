@@ -66,7 +66,7 @@ msgstr "# Порамнети фактури"
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_payment__reconciled_statement_lines_count
 msgid "# Reconciled Statement Lines"
-msgstr "# Усогласени линии на извештајот"
+msgstr "# Порамнети ставки од извод"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_res_partner__supplier_invoice_count
@@ -286,7 +286,7 @@ msgstr "- Редоследот на документот станува уред
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_move_line_form
 msgid "-> View partially reconciled entries"
-msgstr "-> Преглед на делумно усогласени записи"
+msgstr "-> Преглед на делумно порамнети книжења"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.email_template_mail_gateway_failed
@@ -898,7 +898,7 @@ msgstr "<span class=\"o_stat_text\">Евиденција</span>"
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_move_form
 msgid "<span class=\"o_stat_text\">Reconciled Items</span>"
-msgstr "<span class=\"o_stat_text\">Усогласени ставки</span>"
+msgstr "<span class=\"o_stat_text\">Порамнети ставки</span>"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_payment_form
@@ -1446,7 +1446,7 @@ msgstr ""
 #. module: account
 #: model:ir.model.constraint,message:account.constraint_account_reconcile_model_name_unique
 msgid "A reconciliation model already bears this name."
-msgstr "Веќе постои модел за помирување што го носи ова име."
+msgstr "Веќе постои модел за порамнување со ова име."
 
 #. module: account
 #: model:ir.model.constraint,message:account.constraint_account_report_line_code_uniq
@@ -1477,7 +1477,7 @@ msgstr ""
 #. odoo-python
 #: code:addons/account/models/account_bank_statement.py:0
 msgid "A statement should only contain lines from the same journal."
-msgstr "Изјава треба да содржи само редови од истиот журнал."
+msgstr "Изводот треба да содржи само ставки од истиот дневник."
 
 #. module: account
 #: model:ir.model.constraint,message:account.constraint_account_account_tag_name_uniq
@@ -1754,7 +1754,7 @@ msgstr "Потражувања"
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_move_line__is_account_reconcile
 msgid "Account Reconcile"
-msgstr "Усогласување на сметка"
+msgstr "Порамнување на конто"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_move_line__account_root_id
@@ -2457,7 +2457,7 @@ msgstr "Дозволи маржа на производот"
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_account__reconcile
 msgid "Allow Reconciliation"
-msgstr "Дозволи усогласување"
+msgstr "Дозволи порамнување"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_res_config_settings__module_account_check_printing
@@ -3314,12 +3314,12 @@ msgstr "Банкарски партнер"
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_reconcile_model_tree
 msgid "Bank Reconciliation Move Presets"
-msgstr "Претходно дефинирани поставки за банкарско усогласување"
+msgstr "Шаблони за банкарско порамнување"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_reconcile_model_search
 msgid "Bank Reconciliation Move preset"
-msgstr "Претходно поставување за банкарско усогласување"
+msgstr "Шаблон за банкарско порамнување"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.account_journal_dashboard_kanban_view
@@ -3330,7 +3330,7 @@ msgstr "Поставување на банка"
 #: model:ir.model,name:account.model_account_bank_statement
 #: model_terms:ir.ui.view,arch_db:account.report_statement
 msgid "Bank Statement"
-msgstr "Извештај од банка"
+msgstr "Банкарски извод"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_res_config_settings__module_account_bank_statement_extract
@@ -6271,7 +6271,7 @@ msgstr "Нацрт (%(currency_amount)s)"
 #. odoo-python
 #: code:addons/account/models/account_move.py:0
 msgid "Draft Bill"
-msgstr "Нацрт-закон"
+msgstr "Нацрт влезна фактура"
 
 #. module: account
 #. odoo-python
@@ -7404,7 +7404,7 @@ msgstr "Целиот износ"
 #: model:ir.model,name:account.model_account_full_reconcile
 #: model:ir.model.fields,field_description:account.field_account_partial_reconcile__full_reconcile_id
 msgid "Full Reconcile"
-msgstr "Целосна усогласување"
+msgstr "Целосно порамнување"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_invoice_filter
@@ -7635,7 +7635,7 @@ msgstr "Објавени записи"
 #: model:ir.model.fields,field_description:account.field_account_bank_statement_line__has_reconciled_entries
 #: model:ir.model.fields,field_description:account.field_account_move__has_reconciled_entries
 msgid "Has Reconciled Entries"
-msgstr "Има усогласени записи"
+msgstr "Има порамнети книжења"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_journal__has_sequence_holes
@@ -8750,7 +8750,7 @@ msgstr "Фактури за валидација"
 #: model:ir.model.fields,help:account.field_account_payment__reconciled_bill_ids
 #: model:ir.model.fields,help:account.field_account_payment__reconciled_invoice_ids
 msgid "Invoices whose journal items have been reconciled with these payments."
-msgstr "Фактури чии журналски записи се усогласени со овие плаќања."
+msgstr "Фактури чии книжења се порамнети со овие плаќања."
 
 #. module: account
 #. odoo-python
@@ -8893,7 +8893,7 @@ msgstr "Дали пратката е испратена"
 #: model:ir.model.fields,field_description:account.field_account_bank_statement_line__is_reconciled
 #: model:ir.model.fields,field_description:account.field_account_payment__is_reconciled
 msgid "Is Reconciled"
-msgstr "Е помирено"
+msgstr "Е порамнето"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_move_line__is_refund
@@ -9461,23 +9461,23 @@ msgstr "Оставете празно за да создадете ново"
 #: model:ir.model.fields,field_description:account.field_account_move__journal_group_id
 #: model:ir.model.fields,field_description:account.field_account_move_line__journal_group_id
 msgid "Ledger"
-msgstr "Леџер"
+msgstr "Главна книга"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_journal__journal_group_ids
 msgid "Ledger Group"
-msgstr "Леџер Груп"
+msgstr "Група на главни книги"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_journal_group__name
 msgid "Ledger group"
-msgstr "Леџер група"
+msgstr "Група на главни книги"
 
 #. module: account
 #: model_terms:ir.actions.act_window,help:account.action_account_journal_group_list
 msgid "Ledger group allows managing multiple accounting standards."
 msgstr ""
-"Ledger group овозможува управување со повеќе сметководствени стандарди."
+"Групата на главни книги овозможува управување со повеќе сметководствени стандарди."
 
 #. module: account
 #: model:ir.model.fields.selection,name:account.selection__account_report_line__horizontal_split_side__left
@@ -9836,30 +9836,30 @@ msgstr "Усогласи текст, локација и референца"
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_move_line__matched_credit_ids
 msgid "Matched Credits"
-msgstr "Усогласени кредити"
+msgstr "Порамнети кредити"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_move_line__matched_debit_ids
 msgid "Matched Debits"
-msgstr "Усогласени дебити"
+msgstr "Порамнети дебити"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_full_reconcile__reconciled_line_ids
 #: model_terms:ir.ui.view,arch_db:account.view_full_reconcile_form
 msgid "Matched Journal Items"
-msgstr "Усогласени ставки од дневникот"
+msgstr "Порамнети ставки од книжења"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_bank_statement_line__matched_payment_ids
 #: model:ir.model.fields,field_description:account.field_account_move__matched_payment_ids
 msgid "Matched Payments"
-msgstr "Усогласени плаќања"
+msgstr "Порамнети плаќања"
 
 #. module: account
 #. odoo-python
 #: code:addons/account/models/account_payment.py:0
 msgid "Matched Transactions"
-msgstr "Усогласени трансакции"
+msgstr "Порамнети трансакции"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_move_line__full_reconcile_id
@@ -9868,12 +9868,12 @@ msgstr "Усогласени трансакции"
 #: model_terms:ir.ui.view,arch_db:account.view_move_line_form
 #: model_terms:ir.ui.view,arch_db:account.view_move_line_tree
 msgid "Matching"
-msgstr "Соодветно"
+msgstr "Порамнување"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_move_line__matching_number
 msgid "Matching #"
-msgstr "Соодветно #"
+msgstr "Порамнување #"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_reconcile_model__matching_order
@@ -10143,13 +10143,13 @@ msgstr "Мулти-компанија"
 #. module: account
 #: model:ir.ui.menu,name:account.menu_action_account_journal_group_list
 msgid "Multi-Ledger"
-msgstr "Мулти-леџер"
+msgstr "Повеќе главни книги"
 
 #. module: account
 #: model:ir.actions.act_window,name:account.action_account_journal_group_list
 #: model_terms:ir.ui.view,arch_db:account.view_account_journal_group_form
 msgid "Multi-ledger"
-msgstr "Мулти-леџер"
+msgstr "Повеќе главни книги"
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_bank_statement_line__direction_sign
@@ -11072,7 +11072,7 @@ msgstr "Неплатени обврски"
 #: model_terms:ir.ui.view,arch_db:account.view_account_invoice_filter
 #: model_terms:ir.ui.view,arch_db:account.view_account_move_line_payment_filter
 msgid "Overdue"
-msgstr "Просрочено"
+msgstr "Доспеано"
 
 #. module: account
 #: model:ir.model.fields.selection,name:account.selection__account_payment_register__installments_mode__overdue
@@ -11224,7 +11224,7 @@ msgstr "Дел"
 #. module: account
 #: model:ir.model,name:account.model_account_partial_reconcile
 msgid "Partial Reconcile"
-msgstr "Делумно усогласување"
+msgstr "Делумно порамнување"
 
 #. module: account
 #: model:ir.model.fields.selection,name:account.selection__account_invoice_report__payment_state__partial
@@ -11331,7 +11331,7 @@ msgstr "Партнерот е поставен"
 #. module: account
 #: model:ir.model,name:account.model_account_reconcile_model_partner_mapping
 msgid "Partner mapping for reconciliation models"
-msgstr "Мапирање на партнери за модели за помирување"
+msgstr "Мапирање на партнери за модели за порамнување"
 
 #. module: account
 #. odoo-python
@@ -11388,7 +11388,7 @@ msgstr "Платете ги сметките со еден клик преку E
 #: model_terms:ir.ui.view,arch_db:account.view_account_move_line_filter
 #: model_terms:ir.ui.view,arch_db:account.view_account_search
 msgid "Payable"
-msgstr "Плативливо"
+msgstr "Обврски"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_res_partner__debit_limit
@@ -11692,7 +11692,7 @@ msgstr ""
 #: model:ir.model.fields,help:account.field_account_bank_statement_line__reconciled_payment_ids
 #: model:ir.model.fields,help:account.field_account_move__reconciled_payment_ids
 msgid "Payments that have been reconciled with this invoice."
-msgstr "Плаќања што се усогласени со оваа фактура."
+msgstr "Плаќања што се порамнети со оваа фактура."
 
 #. module: account
 #: model:ir.model.fields.selection,name:account.selection__account_payment_term_line__value__percent
@@ -12306,55 +12306,55 @@ msgstr ""
 #. odoo-python
 #: code:addons/account/wizard/account_merge_wizard.py:0
 msgid "Reconcilable"
-msgstr "Усогласив"
+msgstr "Порамнливо"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_move_line__reconciled
 #: model_terms:ir.ui.view,arch_db:account.view_account_payment_search
 msgid "Reconciled"
-msgstr "Затворено"
+msgstr "Порамнето"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_payment__reconciled_bill_ids
 msgid "Reconciled Bills"
-msgstr "Порамнети сметки"
+msgstr "Порамнети влезни фактури"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_payment__reconciled_invoice_ids
 msgid "Reconciled Invoices"
-msgstr "Усогласени фактури"
+msgstr "Порамнети фактури"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_payment__reconciled_invoices_type
 msgid "Reconciled Invoices Type"
-msgstr "Тип на усогласени фактури"
+msgstr "Тип на порамнети фактури"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_bank_statement_line__reconciled_payment_ids
 #: model:ir.model.fields,field_description:account.field_account_move__reconciled_payment_ids
 msgid "Reconciled Payments"
-msgstr "Усогласени плаќања"
+msgstr "Порамнети плаќања"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_payment__reconciled_statement_line_ids
 msgid "Reconciled Statement Lines"
-msgstr "Усогласени редови на извештајот"
+msgstr "Порамнети ставки од извод"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_move_line__reconcile_model_id
 msgid "Reconciliation Model"
-msgstr "Модел за помирување"
+msgstr "Модел за порамнување"
 
 #. module: account
 #: model:ir.actions.act_window,name:account.action_account_reconcile_model
 #: model:ir.ui.menu,name:account.action_account_reconcile_model_menu
 msgid "Reconciliation Models"
-msgstr "Модели за помирување"
+msgstr "Модели за порамнување"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_full_reconcile__partial_reconcile_ids
 msgid "Reconciliation Parts"
-msgstr "Делови за помирување"
+msgstr "Делови од порамнување"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_message_tree_audit_log_search
@@ -12415,7 +12415,7 @@ msgstr "Освежи го курсот на валутата за датумот
 #: model:ir.model.fields.selection,name:account.selection__account_tax_repartition_line__document_type__refund
 #: model_terms:ir.ui.view,arch_db:account.account_journal_dashboard_kanban_view
 msgid "Refund"
-msgstr "Враќање"
+msgstr "Поврат"
 
 #. module: account
 #. odoo-python
@@ -12700,23 +12700,23 @@ msgstr "Обратна промена на: %(move_name)s, %(reason)s"
 #: code:addons/account/wizard/account_move_reversal.py:0
 #: code:addons/account/wizard/accrued_orders.py:0
 msgid "Reversal of: %s"
-msgstr "Обратно на: %s"
+msgstr "Сторно на: %s"
 
 #. module: account
 #: model:ir.actions.act_window,name:account.action_view_account_move_reversal
 #: model_terms:ir.ui.view,arch_db:account.view_account_move_reversal
 msgid "Reverse"
-msgstr "Назад"
+msgstr "Сторнирај"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_move_form
 msgid "Reverse Entry"
-msgstr "Обратен влез"
+msgstr "Сторно книжење"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_move_reversal
 msgid "Reverse Journal Entry"
-msgstr "Обратна сметководствена евиденција"
+msgstr "Сторно книжење"
 
 #. module: account
 #. odoo-python
@@ -12736,14 +12736,14 @@ msgstr "Поништување и креирање фактура"
 #: model_terms:ir.ui.view,arch_db:account.view_account_move_filter
 #: model_terms:ir.ui.view,arch_db:account.view_move_form
 msgid "Reversed"
-msgstr "Обратно"
+msgstr "Сторнирано"
 
 #. module: account
 #. odoo-javascript
 #: code:addons/account/static/src/components/account_payment_field/account_payment.xml:0
 #: model_terms:ir.ui.view,arch_db:account.report_invoice_document
 msgid "Reversed on"
-msgstr "Превртено на"
+msgstr "Сторнирано на"
 
 #. module: account
 #. odoo-python
@@ -12840,7 +12840,7 @@ msgstr "Правило за предложување на соодветен з�
 #. module: account
 #: model:ir.model,name:account.model_account_reconcile_model_line
 msgid "Rules for the reconciliation model"
-msgstr "Правила за моделот за помирување"
+msgstr "Правила за моделот за порамнување"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_bank_statement_line__running_balance
@@ -13491,7 +13491,7 @@ msgstr ""
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_move_form
 msgid "Set as Checked"
-msgstr "Постави како означено"
+msgstr "Означи како проверено"
 
 #. module: account
 #: model:onboarding.onboarding.step,button_text:account.onboarding_onboarding_step_sales_tax
@@ -13630,7 +13630,7 @@ msgstr "Прикажи го копчето \"Ресетирај на нацрт\
 #. odoo-python
 #: code:addons/account/models/company.py:0
 msgid "Show Unreconciled Bank Statement Line"
-msgstr "Прикажи несогласена ставка од банкарската изјава"
+msgstr "Прикажи непорамнета ставка од банкарски извод"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_tax_search
@@ -13772,19 +13772,19 @@ msgstr "Состојба"
 #: model:ir.model.fields,field_description:account.field_account_move_line__statement_id
 #: model_terms:ir.ui.view,arch_db:account.view_bank_statement_search
 msgid "Statement"
-msgstr "Изјава"
+msgstr "Извод"
 
 #. module: account
 #. odoo-python
 #: code:addons/account/models/account_bank_statement.py:0
 msgid "Statement %(date)s"
-msgstr "Изјава %(date)s"
+msgstr "Извод %(date)s"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_bank_statement_line__statement_line_id
 #: model:ir.model.fields,field_description:account.field_account_move__statement_line_id
 msgid "Statement Line"
-msgstr "Изјава"
+msgstr "Ставка од извод"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_bank_statement_line__statement_name
@@ -13819,7 +13819,7 @@ msgstr "Изјави"
 #. module: account
 #: model:ir.model.fields,help:account.field_account_payment__reconciled_statement_line_ids
 msgid "Statements lines matched to this payment"
-msgstr "Изјави со усогласени линии за ова плаќање"
+msgstr "Ставки од извод порамнети со ова плаќање"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_fiscal_position__states_count
@@ -15343,7 +15343,7 @@ msgstr ""
 #. module: account
 #: model:ir.model.fields,help:account.field_account_move_line__statement_line_id
 msgid "The statement line that created this entry"
-msgstr "Изјавата што ја создаде оваа ставка"
+msgstr "Ставката од извод што го креираше ова книжење"
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_reconcile_model__payment_tolerance_type
@@ -15778,7 +15778,7 @@ msgstr ""
 #. odoo-python
 #: code:addons/account/models/account_reconcile_model.py:0
 msgid "This reconciliation model has created no entry so far"
-msgstr "Овој модел за помирување досега не создаде ниту еден запис."
+msgstr "Овој модел за порамнување досега не создаде ниту едно книжење."
 
 #. module: account
 #. odoo-python
@@ -16352,28 +16352,28 @@ msgstr "Необјавени записи во дневникот"
 #: code:addons/account/static/src/components/account_payment_field/account_payment.xml:0
 #: model:ir.actions.server,name:account.action_account_unreconcile
 msgid "Unreconcile"
-msgstr "Неспоив"
+msgstr "Одпорамни"
 
 #. module: account
 #: model_terms:ir.ui.view,arch_db:account.view_account_move_line_filter
 msgid "Unreconciled"
-msgstr "Незатворено"
+msgstr "Непорамнето"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_secure_entries_wizard__unreconciled_bank_statement_line_ids
 msgid "Unreconciled Bank Statement Line"
-msgstr "Нереконцилирана ставка во банкарска извештај"
+msgstr "Непорамнета ставка од банкарски извод"
 
 #. module: account
 #: model:ir.model.fields,field_description:account.field_account_report__filter_unreconciled
 msgid "Unreconciled Entries"
-msgstr "Неусогласени записи"
+msgstr "Непорамнети книжења"
 
 #. module: account
 #. odoo-python
 #: code:addons/account/models/company.py:0
 msgid "Unreconciled Transactions"
-msgstr "Неусогласени трансакции"
+msgstr "Непорамнети трансакции"
 
 #. module: account
 #. odoo-javascript
@@ -16762,7 +16762,7 @@ msgstr "Број на сметки од добавувач"
 #. odoo-python
 #: code:addons/account/models/account_move.py:0
 msgid "Vendor Bill Created"
-msgstr "Создаден смет на добавувачот"
+msgstr "Креирана влезна фактура"
 
 #. module: account
 #. odoo-python
@@ -17073,7 +17073,7 @@ msgstr "Ќе испратите"
 #. odoo-python
 #: code:addons/account/models/account_move_line.py:0
 msgid "You are trying to reconcile some entries that are already reconciled."
-msgstr "Се обидувате да усогласите некои записи кои веќе се усогласени."
+msgstr "Се обидувате да порамните книжења кои веќе се порамнети."
 
 #. module: account
 #: model:ir.model.fields,help:account.field_account_journal__invoice_reference_model
